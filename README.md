@@ -50,4 +50,28 @@ A cohort will have the following attributes:
     duration: The time it took the student to complete the assignment
     submission_date: The date is was submitted
 
+## Teacher Entity
+
+    id: A unique identifier
+    name: The name of the teacher
+    start_date: The date that the teacher started working
+    end_date: The date that the teacher stopped working
+    is_active: If the teacher is actively teaching right now
+
+
+## Assistance_request Entity
+
+    id: A unique identifier
+    assignment_id: The id of the assignment the request was made from
+    student_id: The id of the student making the request
+    teacher_id: The id of the teacher responding to the request
+    created_at: The timestamp when the request was made
+    started_at: The timestamp when the assistance started
+    completed_at: The timestamp when the assistance was completed
+    student_feedback: Feedback about the student given by the teacher
+    teacher_feedback: Feedback about the teacher given by the student
+
+
+
+
 
